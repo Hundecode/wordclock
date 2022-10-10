@@ -1,0 +1,11 @@
+#Board{
+    width:416px;
+    height:416px;
+    border:1px solid black;
+}
+
+div{
+    width:52px;
+    height:52px;
+    float:left;
+}
