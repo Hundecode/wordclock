@@ -1,7 +1,12 @@
 #Board{
     width:416px;
     height:416px;
-    border:1px solid black;
+    /*border:1px solid black;*/
+}
+
+#BoardContainer{
+    width: 624px;
+    height: 624px;
 }
 
 div{
@@ -9,3 +14,7 @@ div{
     height:52px;
     float:left;
 }
+
+.field1:hover {
+    background-color: yellow;
+  }
