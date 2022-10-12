@@ -15,6 +15,10 @@ div{
     float:left;
 }
 
-.field1:hover {
-    background-color: yellow;
-  }
+
+p{
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    color:white;
+}
