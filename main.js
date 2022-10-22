@@ -204,7 +204,7 @@ function updateBoardColor() {
     } else if (isInArray(m, [40,41,42,43,44])) {
         active = active.concat(word_ZWANZIG).concat(word_VOR);
     } else if (isInArray(m, [45,46,47,48,49])) {
-        active = active.concat(word_ZEHN).concat(word_VOR);
+        active = active.concat(word_DREIVIERTEL);
     } else if (isInArray(m, [50,51,52,53,54])) {
         active = active.concat(word_ZEHN).concat(word_VOR);
     } else if (isInArray(m, [55,56,57,58,59])) {
