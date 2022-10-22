@@ -183,7 +183,7 @@ function updateBoardColor() {
     } else if (isInArray(m, [50,51,52,53,54])) {
         active = active.concat(word_ZEHN).concat(word_VOR);
     } else if (isInArray(m, [55,56,57,58,59])) {
-        active = active.concat(word_FUENF).concat(word_VOR);
+        active = active.concat(word_FÜNF).concat(word_VOR);
     } else {
         alert('Zeitfehler');
     }
