@@ -1,12 +1,7 @@
 #Board{
     width:416px;
     height:416px;
-    /*border:1px solid black;*/
-}
-
-#BoardContainer{
-    width: 624px;
-    height: 624px;
+    background-color: black;
 }
 
 div{

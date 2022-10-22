@@ -6,7 +6,7 @@ let activeColor = 'white';
 // Create Board
 let rows = 12;
 let columns = 13;
-let border = 1;
+let border = 0;
 
 
 let letters = [
@@ -52,7 +52,8 @@ addLetters();
 
 function createBoard() {
     document.getElementById('Board').innerHTML = '';
-    document.getElementById('Board').style.width=(columns*(52+2))+'px';
+    document.getElementById('Board').style.width=(columns*(52))+'px';
+    document.getElementById('Board').style.height=(rows*(52))+'px';
     for (let i=0; i<(rows*columns); i++) {
         let a = document.getElementById('Board').appendChild(document.createElement('div'));
         a.setAttribute('id', 'field' + i);
