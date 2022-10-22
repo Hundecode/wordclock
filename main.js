@@ -1,3 +1,8 @@
+// Color Stuff
+let boardColor = 'black';
+let inactiveColor = '#303030';
+let activeColor = 'white';
+
 // Create Board
 let rows = 10;
 let columns = 11;
@@ -36,8 +41,8 @@ function createBoard() {
     for (let i=0; i<(rows*columns); i++) {
         let a = document.getElementById('Board').appendChild(document.createElement('div'));
         a.setAttribute('id', 'field' + i);
-        a.style.backgroundColor = 'black';
-        a.style.border = border +"px solid #00000000";;
+        a.style.backgroundColor = boardColor;
+        //a.style.border = border +"px solid #00000000";;
         a.setAttribute('class', 'field');
     };
 }
@@ -92,9 +97,9 @@ setInterval(updateBoardColor, 1000); //
 
 function clearBoardColor() {
     for(let i = 0; i< (rows*columns); i++){
-        document.getElementById('p'+i).style.color = '#303030';
+        document.getElementById('p'+i).style.color = inactiveColor;
     }
-};
+}
 
 function updateBoardColor() {
     clearBoardColor();
@@ -105,6 +110,10 @@ function updateBoardColor() {
     var m = today.getMinutes();
     
     active = active = active.concat(word_ES).concat(word_IST);
+
+    if (!isInArray(m, [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,20,21,22,23,24])){
+        h++;
+    }
 
     //set HOUR
     switch(h) {
@@ -188,7 +197,7 @@ function updateBoardColor() {
         alert('Zeitfehler');
     }
     for(let i = 0; i< active.length; i++){
-        document.getElementById(active[i]).style.color = 'white';
+        document.getElementById(active[i]).style.color = activeColor;
     }
 }
 
