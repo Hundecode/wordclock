@@ -224,7 +224,7 @@ function updateBoardColor() {
     } else if(m%5 == 4) {
         active = active.concat(['p0','p12', 'p143', 'p155']);
     } else {
-        alert('Zeitfehler');
+        actice = active.concat([]);
     }
 
     for(let i = 0; i< active.length; i++){
