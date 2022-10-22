@@ -140,7 +140,11 @@ function updateBoardColor() {
             break;
         case 1:
         case 13:
-            active = active.concat(word_EIN);
+            if(isInArray(m, [0,1,2,3,4])){
+                active = active.concat(word_EIN);
+            } else {
+                active = active.concat(word_EINS);
+            }
             break;
         case 2:
         case 14:
