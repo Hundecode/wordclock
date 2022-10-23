@@ -101,7 +101,7 @@ let word_SECHS = ['p105', 'p106', 'p107', 'p108', 'p109'];
 let word_ACHT = ['p112', 'p113', 'p114', 'p115'];
 let word_SIEBEN = ['p118', 'p119', 'p120', 'p121', 'p122', 'p123'];
 let word_ZWÖLF = ['p124', 'p125', 'p126', 'p127', 'p128'];
-let word_ZEHN2 = ['p130', 'p131', 'p132', 'p133'];
+let word_ZEHN2 = ['p131', 'p132', 'p133', 'p134'];
 let word_NEUN = ['p134','p135','p136','p137']; 
 let word_UHR = ['p139', 'p140', 'p141'];
 
