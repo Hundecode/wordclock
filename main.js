@@ -106,10 +106,205 @@ let word_NEUN = ['p134','p135','p136','p137'];
 let word_UHR = ['p139', 'p140', 'p141'];
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+// CODE NUMBERS
+////////////////////////////////////////////////////////////////////////////////////////////////////
+/*let number_X_ = [   'p33',  'p34',  'p35',  'p36',  'p37',
+                    'p46',  'p47',  'p48',  'p49',  'p50',
+                    'p59',  'p60',  'p61',  'p62',  'p63',
+                    'p72',  'p73',  'p74',  'p75',  'p76',
+                    'p85',  'p86',  'p87',  'p88',  'p89',
+                    'p98',  'p99',  'p100', 'p101', 'p102',
+                    'p111', 'p112', 'p113', 'p114', 'p115'
+];*/
+
+let number_X0 = [           'p34',  'p35',  'p36',
+                    'p46',                          'p50',
+                    'p59',                   'p62', 'p63',
+                    'p72',          'p74',          'p76',
+                    'p85',  'p86',                  'p89',
+                    'p98',                         'p102',
+                            'p112', 'p113', 'p114',
+];
+
+let number_X1 = [           'p35',
+                    'p47',  'p48',
+                            'p61',
+                            'p74',
+                            'p87', 
+                            'p100',
+                    'p112', 'p113', 'p114'
+];
+
+let number_X2 = [           'p34',  'p35',  'p36',
+                    'p46',                          'p50',
+                                                    'p63',
+                                            'p75',
+                                    'p87',
+                            'p99', 
+                    'p111', 'p112', 'p113', 'p114', 'p115'
+];
+
+let number_X3 = [   'p33',  'p34',  'p35',  'p36',  'p37',
+                                            'p49',  
+                                    'p61', 
+                                            'p75',
+                                                    'p89',
+                    'p98',                          'p102',
+                            'p112', 'p113', 'p114'
+];
+
+let number_X4 = [                           'p36',
+                                    'p48',  'p49',
+                            'p60',          'p62',
+                    'p72',                  'p75',
+                    'p85',  'p86',  'p87',  'p88',  'p89',
+                                            'p101',
+                                            'p114',
+];
+
+let number_X5 = [   'p33',  'p34',  'p35',  'p36',  'p37',
+                    'p46',
+                    'p59',  'p60',  'p61',  'p62',
+                                                    'p76',
+                                                    'p89',
+                    'p98',                          'p102',
+                            'p112', 'p113', 'p114'
+];
+
+let number_X6 = [                   'p35',  'p36',
+                            'p47',
+                    'p59',  
+                    'p72',  'p73',  'p74',  'p75',
+                    'p85',                          'p89',
+                    'p98',                          'p102',
+                            'p112', 'p113', 'p114',
+];
+
+let number_X7 = [   'p33',  'p34',  'p35',  'p36',  'p37',
+                                                    'p50',
+                                            'p62',  
+                                    'p74',
+                            'p86',
+                            'p99',
+                            'p112',
+];
+
+let number_X8 = [           'p34',  'p35',  'p36',
+                    'p46',                          'p50',
+                    'p59',                          'p63',
+                            'p73',  'p74',  'p75',
+                    'p85',                          'p89',
+                    'p98',                          'p102',
+                            'p112', 'p113', 'p114',
+];
+
+let number_X9 = [           'p34',  'p35',  'p36',  
+                    'p46',                          'p50',
+                    'p59',                          'p63',
+                            'p73',  'p74',  'p75',  'p76',
+                                                    'p89',
+                                            'p101',
+                            'p112', 'p113', 
+];
+//////////////////////////////////////////////////////////
+let number_0X = [           'p28',  'p29',  'p30',
+                    'p40',                          'p44',
+                    'p53',                   'p56', 'p57',
+                    'p66',          'p68',          'p70',
+                    'p79',  'p80',                  'p83',
+                    'p92',                          'p96',
+                            'p106', 'p107', 'p108',
+];
+
+let number_1X = [           'p29',
+                    'p41',  'p42',
+                            'p55',
+                            'p68',
+                            'p81', 
+                            'p94',
+                    'p106', 'p107', 'p108'
+];
+
+let number_2X = [           'p28',  'p29',  'p30',
+                    'p40',                          'p44',
+                                                    'p57',
+                                            'p69',
+                                    'p81',
+                            'p93', 
+                    'p105', 'p106', 'p107', 'p108', 'p109'
+];
+
+let number_3X = [   'p27',  'p28',  'p29',  'p30',  'p31',
+                                            'p43',  
+                                    'p55', 
+                                            'p69',
+                                                    'p83',
+                    'p92',                          'p96',
+                            'p106', 'p107', 'p108'
+];
+
+let number_4X = [                           'p30',
+                                    'p42',  'p43',
+                            'p54',          'p56',
+                    'p66',                  'p69',
+                    'p79',  'p80',  'p81',  'p82',  'p83',
+                                            'p95',
+                                            'p108',
+];
+
+let number_5X = [   'p27',  'p28',  'p29',  'p30',  'p31',
+                    'p40',
+                    'p53',  'p54',  'p55',  'p56',
+                                                    'p70',
+                                                    'p83',
+                    'p92',                          'p96',
+                            'p106', 'p107', 'p108'
+];
+
+let number_6X = [                   'p29',  'p30',
+                            'p41',
+                    'p53',  
+                    'p66',  'p67',  'p68',  'p69',
+                    'p79',                          'p83',
+                    'p92',                          'p96',
+                            'p106', 'p107', 'p108',
+];
+
+let number_7X = [   'p27',  'p28',  'p29',  'p30',  'p31',
+                                                    'p44',
+                                            'p56',  
+                                    'p68',
+                            'p80',
+                            'p93',
+                            'p106',
+];
+
+let number_8X = [           'p28',  'p29',  'p30',
+                    'p40',                          'p44',
+                    'p53',                          'p57',
+                            'p67',  'p68',  'p69',
+                    'p79',                          'p83',
+                    'p92',                          'p96',
+                            'p106', 'p107', 'p108',
+];
+
+let number_9X = [           'p28',  'p29',  'p30',  
+                    'p40',                          'p44',
+                    'p53',                          'p57',
+                            'p67',  'p68',  'p69',  'p70',
+                                                    'p83',
+                                            'p95',
+                            'p106', 'p107', 
+];
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
 // LOGIC
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-setInterval(updateBoardColor, 1000); //
+//setInterval(updateBoardColor, 1000);
+setInterval(updateBoardColorSeconds, 1000);
+
 
 function clearBoardColor() {
     for(let i = 0; i< (rows*columns); i++){
@@ -236,6 +431,68 @@ function updateBoardColor() {
         document.getElementById(active[i]).style.color = activeColor;
     }
 }
+////////////////////////////////////
+
+function updateBoardColorSeconds() {
+    clearBoardColor();
+    var active = [];
+
+    const d = new Date();
+    let seconds = d.getSeconds(); //actual second
+
+
+    let a = seconds%10;
+    // X_
+    switch(a) {
+        case 0: active = active.concat(number_X0); 
+        break;
+        case 1: active = active.concat(number_X1);
+        break;
+        case 2: active = active.concat(number_X2);
+        break;
+        case 3: active = active.concat(number_X3);
+        break;
+        case 4: active = active.concat(number_X4);
+        break; 
+        case 5: active = active.concat(number_X5);
+        break; 
+        case 6: active = active.concat(number_X6);
+        break; 
+        case 7: active = active.concat(number_X7);
+        break; 
+        case 8: active = active.concat(number_X8);
+        break; 
+        case 9: active = active.concat(number_X9);
+        break; 
+    }
+
+    switch(Math.floor(seconds/10)) {
+        case 0: active = active.concat(number_0X); 
+        break;
+        case 1: active = active.concat(number_1X);
+        break;
+        case 2: active = active.concat(number_2X);
+        break;
+        case 3: active = active.concat(number_3X);
+        break;
+        case 4: active = active.concat(number_4X);
+        break; 
+        case 5: active = active.concat(number_5X);
+        break; 
+        case 6: active = active.concat(number_6X);
+        break; 
+        case 7: active = active.concat(number_7X);
+        break; 
+        case 8: active = active.concat(number_8X);
+        break; 
+        case 9: active = active.concat(number_9X);
+        break; 
+    }
+    for(let i = 0; i< active.length; i++){
+        document.getElementById(active[i]).style.color = activeColor;
+    }
+}
+
 
 
 // HELPER
