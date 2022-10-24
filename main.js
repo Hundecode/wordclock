@@ -302,8 +302,8 @@ let number_9X = [           'p28',  'p29',  'p30',
 // LOGIC
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//setInterval(updateBoardColor, 1000);
-setInterval(updateBoardColorSeconds, 1000);
+setInterval(updateBoardColor, 1000);
+//setInterval(updateBoardColorSeconds, 1000);
 
 
 function clearBoardColor() {
