@@ -7,26 +7,20 @@ let activeColor = 'white';
 //Switch
 var input = document.getElementById('toggleswitch');
 
-var activeFunction = input.checked? updateBoardColor : updateBoardColorSeconds; 
-
-//console.log(activeFunction.name);
+var interval = setInterval(updateBoardColor, 1000);
 
 input.addEventListener('change',function(){
     if(this.checked) {
-        console.log('Testnachricht');
-        console.log('Aktive Funktion ist ' + activeFunction.name);
-        activeFunction = updateBoardColorSeconds;
-        setInterval(updateBoardColor, 2000);
+        clearInterval(interval);
+        interval = setInterval(updateBoardColorSeconds, 1000);
+
     } else {
-        console.log('Testnachricht2');
-        console.log('Aktive Funktion ist ' + activeFunction.name);
-        activeFunction = updateBoardColor;
-        setInterval(updateBoardColorSeconds, 2000);
-        
+        clearInterval(interval);
+        interval = setInterval(updateBoardColor, 1000);
     }
 });
 
-//setInterval(activeFunction, 1000);
+
 
 // Create Board
 let rows = 12;
