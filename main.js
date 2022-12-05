@@ -3,6 +3,25 @@ let boardColor = 'black';
 let inactiveColor = '#303030';
 let activeColor = 'white';
 
+
+//Switch
+var input = document.getElementById('toggleswitch');
+
+var interval = setInterval(updateBoardColor, 1000);
+
+input.addEventListener('change',function(){
+    if(this.checked) {
+        clearInterval(interval);
+        interval = setInterval(updateBoardColorSeconds, 1000);
+
+    } else {
+        clearInterval(interval);
+        interval = setInterval(updateBoardColor, 1000);
+    }
+});
+
+
+
 // Create Board
 let rows = 12;
 let columns = 13;
@@ -301,9 +320,10 @@ let number_9X = [           'p28',  'p29',  'p30',
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // LOGIC
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-
-setInterval(updateBoardColor, 1000);
+//var actualFunction = setInterval(updateBoardColorSeconds, 1000);
+//setInterval(updateBoardColor, 1000);
 //setInterval(updateBoardColorSeconds, 1000);
+//setInterval(actualFunction, 1000);
 
 
 function clearBoardColor() {
@@ -492,6 +512,7 @@ function updateBoardColorSeconds() {
         document.getElementById(active[i]).style.color = activeColor;
     }
 }
+
 
 
 
