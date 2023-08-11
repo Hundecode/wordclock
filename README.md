@@ -1,6 +1,9 @@
 # wordclock
 
+see demo:
+https://dominiclohr.de/wordclock/
+
 ## Future Work (Feature-List)
-- Minute-Points
+
 - Button: Change Color
 - English Version
